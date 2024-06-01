@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 100px;
+    min-height: 1000px;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+.table th
+{
+    font-size: 1.2rem;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+.symbol{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.symbol span{
+    margin-left: 10px;
+    color: #9fa6b7;
+    font-weight: 600;
+}
+
+.table tr
+{
+    margin-bottom: 1rem;
+}
+
+.table tbody tr{
+    border-bottom: 1px solid #22262e;
+    font-size: 1rem;
+    height: 80px;
+}
+
+.error{
+    color: #d33636;
+}
+.success{
+    color: #57bc7c;
+}
+
+@media screen and (max-width: 600px) {
+    .table{
+        display: block;
+        overflow-y: scroll;
+    }
+    .table th{
+        font-size: 1rem;
+    }
+    .table th,
+    .table td{
+        padding: 0 10px;
+    }
+
+}
